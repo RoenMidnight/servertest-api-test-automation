@@ -1,0 +1,13 @@
+<testsuite name="contract.authentication.authentication.Happy Get JWT Token Flow" tests="1" errors="0" failures="0" skipped="0" time="1.868377" timestamp="2025-10-20T17:32:53.458297" hostname="Roen"><testcase classname="contract.authentication.authentication.Happy Get JWT Token Flow" name="GET - JWT Token" status="passed" time="1.868377"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: GET - JWT Token
+    Given I create a new "usuario" ... passed in 0.629s
+    When I do a "GET" request to "login" endpoint with "given" data ... passed in 1.239s
+    Then the status code should be "200" ... passed in 0.000s
+    And the "message" with "Login realizado com sucesso" is on response body ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
