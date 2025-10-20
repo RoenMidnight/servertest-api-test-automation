@@ -1,4 +1,4 @@
-name: Behave CI/CD Pipeline
+name: RUN TESTS CI/CD Pipeline
 
 on:
   push:
