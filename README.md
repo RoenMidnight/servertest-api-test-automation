@@ -1,4 +1,6 @@
 [![Badge ServeRest](https://img.shields.io/badge/API-ServeRest-green)](https://github.com/ServeRest/ServeRest/)
+[![Run API Tests](https://github.com/RoenMidnight/servertest-api-test-automation/actions/workflows/behave_tests.yml/badge.svg)](https://github.com/RoenMidnight/servertest-api-test-automation/actions/workflows/behave_tests.yml)
+
 
 # Automated Tests to API Serverest
 
