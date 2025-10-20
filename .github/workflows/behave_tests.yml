@@ -32,14 +32,14 @@ jobs:
       - name: Generate Allure test report
         uses: andgineer/allure-report@v3.6
         id: allure-report
-        if: always() # Ensures report generation even if tests fail
+        if: always() 
         with:
           allure-results: allure-results
-          website: gh-pages-dir # Optional: for publishing to GitHub Pages
-          reports-site-path: builds/tests # Optional: for organizing reports within GitHub Pages
+          website: gh-pages-dir
+          reports-site-path: builds/tests
 
       - name: Upload Allure Report artifact
         uses: actions/upload-artifact@v4
         with:
-          name: allure-report
-          path: ${{ steps.allure-report.outputs.report-path }} # Path to the generated report
+          name: allure-report-html
+          path: allure-report
