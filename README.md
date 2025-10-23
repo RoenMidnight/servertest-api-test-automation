@@ -28,12 +28,19 @@ behave -f allure_behave.formatter:AllureFormatter -o allure_results --exclude="p
 ## Test Structure
 The test cases are divided in Contract, End To End and Performance and this tests are divided between Happy and Negative Paths.
 
--`features/contract`: contract test cases feature files;
--`features/endToEnd`: end to end test cases feature files;
--`features/performance`: performance test cases feature files;
--`features/enviroment.py`: set environment variables and run pre-condition to tests 
--`features/steps/classes`: project classes with methods
--`features/steps/general.steps.py`: test steps implementation
+```.
+├── my_allure_results/      # Allure Report results
+├── features/               # Tests Root Directory
+│   ├──contract/            # Contract Test Scenarios
+│   ├──endToEnd/            # End To End Test Scenarios
+│   ├──performance/         # Performance Test Scenarios
+│   ├──steps/               # Steps Code Automation
+│   ├──behave.ini           # Behave Basic Configuration
+│   ├──environemnt.py       # Enviroment and Hooks configuration
+│   └──jwt.py               # JWT library generator
+│     
+├── requirements.txt        #Dependencies
+```
 
 ## Pipeline GitHub Actions
 Every `push` or `pull_request` done on `main` authomatic run:
